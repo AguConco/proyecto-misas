@@ -1,0 +1,171 @@
+@font-face {
+    font-family: "PoppinsRegular";
+    src: url("./assets/fonts/Poppins/Poppins-Medium.ttf");
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "PoppinsRegular";
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #FFf;
+}
+
+header {
+    height: 80px;
+    position: fixed;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    transition: .3S;
+    width: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+ul {
+    list-style: none;
+}
+
+nav {
+    max-width: 1024px;
+    height: 100%;
+    margin: 0 auto;
+}
+
+nav ul {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    justify-content: space-around;
+}
+
+nav ul li {
+    min-width: 120px;
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-align: center;
+    width: 100%;
+    padding: 10px 15px;
+    display: inline-block;
+    border-radius: 30px;
+    font-weight: 500;
+    background: #fff;
+    border: 1px solid #ccc
+}
+
+nav ul li a:hover {
+    background: #FFDE59;
+}
+
+#inicio {
+    background-image: url('./assets/img/537b05a4-2d09-45c7-afa5-97cf6edeb669.jfif');
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#inicio div {
+    background: #ffffff60;
+    border-radius: 10px;
+    padding: 50px;
+    max-width: 750px;
+    backdrop-filter: blur(3px);
+    margin: 60px 0 80px;
+}
+
+#inicio h1 {
+    font-size: 40px;
+    text-align: center;
+    font-weight: 900;
+    line-height: 45px;
+    text-transform: uppercase;
+}
+
+
+#inicio a {
+    display: inline-block;
+    text-align: center;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 500;
+    background: #fff;
+    font-size: 20px;
+    transition: .3s;
+}
+
+#inicio a:hover {
+    transform: scale(1.05);
+}
+
+#horarios {
+    background: #fff;
+    max-width: 1024px;
+    margin: auto;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+#horarios h2 {
+    margin-bottom: 40px;
+}
+
+#horarios .days:nth-child(1) {
+    border-radius: 10px 10px 0 0;
+    border-top: 2px solid #222;
+}
+
+#horarios .days:nth-last-child(1) {
+    border-radius: 0 0 10px 10px;
+    border-bottom: 2px solid #222;
+}
+
+
+.days {
+    border-left: 2px solid #222;
+    border-right: 2px solid #222;
+    border-bottom: 1px solid #ccc;
+    padding: 0 20px;
+    display: flex;
+}
+
+.days div:nth-child(1) {
+    border-right: 1px solid #ccc;
+    width: 150px;
+}
+
+.days div:nth-child(1) span {
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    padding: 20px 0;
+    font-size: 20px;
+    text-transform: uppercase;
+}
+
+.days div:nth-child(2) {
+    padding: 20px;
+}
+
+.days div:nth-child(2) ul li {
+    font-size: 18px;
+}
